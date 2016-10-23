@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wRj-nr-sZ3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome-->
+        <scene sceneID="kEX-DW-apG">
+            <objects>
+                <viewController id="m9X-Am-D6u" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u7d-JW-auH"/>
+                        <viewControllerLayoutGuide type="bottom" id="M7S-Br-IgF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b9d-E5-aZZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NG0-8b-p5i">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5DJ-Ot-Oni"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Menu" id="rec-RM-Tws">
+                                        <connections>
+                                            <segue destination="b6N-ea-g0d" kind="show" id="ALi-Oy-4rC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNy-Wi-dGa">
+                                <rect key="frame" x="329" y="247" width="251" height="105"/>
+                                <color key="backgroundColor" red="0.0" green="0.89741386089999997" blue="1" alpha="0.79706357760000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104.5" id="ANh-cT-SiZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Find Jobs">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="H1L-dU-toa" kind="show" id="e1N-Cq-s2R"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOF-sX-p4w">
+                                <rect key="frame" x="279" y="291" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2m-MT-y2q">
+                                <rect key="frame" x="20" y="247" width="251" height="105"/>
+                                <color key="backgroundColor" red="1" green="0.71532437810000005" blue="0.1849139229" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104.5" id="6AN-QW-eAA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Create Jobs">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tOV-Tl-ey9" kind="show" id="gZi-Rh-eHg"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo2" translatesAutoresizingMaskIntoConstraints="NO" id="vOL-Zk-iSw">
+                                <rect key="frame" x="180" y="100" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="fyQ-Md-6Q8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OOF-sX-p4w" firstAttribute="centerX" secondItem="b9d-E5-aZZ" secondAttribute="centerX" id="7eh-QH-VMW"/>
+                            <constraint firstItem="OOF-sX-p4w" firstAttribute="centerY" secondItem="b9d-E5-aZZ" secondAttribute="centerY" id="FS9-Au-3Ec"/>
+                            <constraint firstItem="xNy-Wi-dGa" firstAttribute="trailing" secondItem="b9d-E5-aZZ" secondAttribute="trailingMargin" id="GtI-bd-tQ7"/>
+                            <constraint firstItem="vOL-Zk-iSw" firstAttribute="centerX" secondItem="OOF-sX-p4w" secondAttribute="centerX" id="Icn-HF-qMD"/>
+                            <constraint firstItem="v2m-MT-y2q" firstAttribute="top" secondItem="vOL-Zk-iSw" secondAttribute="bottom" constant="19" id="O9w-Kd-oXm"/>
+                            <constraint firstItem="M7S-Br-IgF" firstAttribute="top" secondItem="NG0-8b-p5i" secondAttribute="bottom" id="Ocu-fK-MMm"/>
+                            <constraint firstItem="xNy-Wi-dGa" firstAttribute="leading" secondItem="OOF-sX-p4w" secondAttribute="trailing" constant="8" id="Pdq-bK-fKz"/>
+                            <constraint firstItem="xNy-Wi-dGa" firstAttribute="height" secondItem="v2m-MT-y2q" secondAttribute="height" id="Q39-ZI-fFM"/>
+                            <constraint firstItem="OOF-sX-p4w" firstAttribute="leading" secondItem="v2m-MT-y2q" secondAttribute="trailing" constant="8" id="Rwb-fH-b4e"/>
+                            <constraint firstItem="v2m-MT-y2q" firstAttribute="leading" secondItem="b9d-E5-aZZ" secondAttribute="leadingMargin" id="V2q-aJ-COi"/>
+                            <constraint firstItem="vOL-Zk-iSw" firstAttribute="top" secondItem="u7d-JW-auH" secondAttribute="bottom" constant="36" id="XCL-H7-KVw"/>
+                            <constraint firstItem="vOL-Zk-iSw" firstAttribute="centerX" secondItem="NG0-8b-p5i" secondAttribute="centerX" id="oIX-yz-CqB"/>
+                            <constraint firstItem="xNy-Wi-dGa" firstAttribute="centerY" secondItem="b9d-E5-aZZ" secondAttribute="centerY" id="ph9-CO-pcJ"/>
+                            <constraint firstItem="NG0-8b-p5i" firstAttribute="width" secondItem="b9d-E5-aZZ" secondAttribute="width" id="qPm-Go-c2H"/>
+                            <constraint firstItem="v2m-MT-y2q" firstAttribute="centerY" secondItem="b9d-E5-aZZ" secondAttribute="centerY" id="yo8-VL-Okp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="KWg-lU-zvt"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TKq-to-58h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287" y="440"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="Jk2-wC-GIy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Menu" id="b6N-ea-g0d" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tXy-iK-1F0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15" y="957"/>
+        </scene>
+        <!--FindJobsStoryboard-->
+        <scene sceneID="c8Z-ep-Ut9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FindJobsStoryboard" id="H1L-dU-toa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Z2-XQ-adn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="242.5" y="957"/>
+        </scene>
+        <!--CreateJobs-->
+        <scene sceneID="472-jX-Ixv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateJobs" id="tOV-Tl-ey9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fvm-xh-IbF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="957"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="25d-QG-gvJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wRj-nr-sZ3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TTw-RM-4MK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="m9X-Am-D6u" kind="relationship" relationship="rootViewController" id="sXr-Um-qUx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZaB-yA-Cx0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="-448"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo2" width="2000" height="2000"/>
+    </resources>
+</document>
